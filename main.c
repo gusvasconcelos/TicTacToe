@@ -3,7 +3,7 @@
 int turn;
 
 void reset(int board[][3]);
-void display(int board[0][3]);
+void display(int board[][3]);
 void play(int board[][3]);
 int checkAvailable(int board[][3], int line, int column);
 int checkLine(int board[][3]);
@@ -61,7 +61,7 @@ void reset(int board[][3]) {
     }
 }
 
-void display(int board[0][3]) {
+void display(int board[][3]) {
     for (int i=0; i < 3; i++) {
         printf("\n");
         for (int j=0; j < 3; j++) {
